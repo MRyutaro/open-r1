@@ -183,3 +183,5 @@ results/
 # 追記
 *.sh.e*
 *.sh.o*
+models/
+datasets/
