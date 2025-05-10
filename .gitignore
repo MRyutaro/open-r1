@@ -179,3 +179,7 @@ results/
 
 .vscode/
 .python-version
+
+# 追記
+*.sh.e*
+*.sh.o*
