@@ -9,9 +9,6 @@
 #PBS -m eb
 #PBS -M matsumoto.ryutaro@ais.cmc.osaka-u.ac.jp
 
-#PBS -e ./logs/error.txt
-#PBS -o ./logs/output.txt
-
 module load BaseCPU
 
 cd $PBS_O_WORKDIR
