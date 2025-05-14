@@ -3,10 +3,10 @@
 #PBS --group=G15612
 
 # テスト用の小規模な設定
-#PBS -l elapstim_req=2:00:00  # 1時間の実行時間
-#PBS -l cpunum_job=8          # 8コアのCPU
-#PBS -l memsz_job=64gb        # 64GBのメモリ
-#PBS -l gpunum_job=1          # 1つのGPU
+#PBS -l elapstim_req=5:00:00  # 実行時間
+#PBS -l cpunum_job=8          # CPU数
+#PBS -l memsz_job=64gb        # メモリ量
+#PBS -l gpunum_job=1          # GPU数
 
 #PBS -m eb
 #PBS -M matsumoto.ryutaro@ais.cmc.osaka-u.ac.jp
@@ -37,4 +37,4 @@ accelerate launch --config_file=recipes/accelerate_configs/zero3.yaml src/open_r
   --eval_strategy steps \
   --eval_steps 50 \
   --output_dir data/Qwen2.5-1.5B-Open-R1-Distill \
-  --report_to none
+  --report_to none \
